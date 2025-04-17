@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'ViewController\Home\HomeController@home')->name('home');
 
 Auth::routes(['register' => false]);
-Route::get('/logout', 'Auth\LoginController@logout')->name('logout');
+Route::get('/logout', 'Auth\LoginController@logout')->name('another-logout');
 
 Route::get("visi-misi","ViewController\Home\HomeController@visi_misi")->name("visimisiku");
 Route::get("renstra-fuad","ViewController\Home\HomeController@renstra_fuad")->name("renstrafuad");
