@@ -86,9 +86,9 @@ Route::group(['middleware' => 'auth','prefix' => 'f-panel'], function(){
 	Route::post('update-application-journal-correspondent', 'FuncController\Panel\ApplicationController@update_application_journal_correspondent')->name('update-application-journal-correspondent');	
 	
 
-	Route::post('update-application-ppwpro', 'FuncController\Panel\ApplicationController@update_application_ppwpro')->name('update-application-nilai-matkul');
-	Route::post('update-application-ppwpro-nd', 'FuncController\Panel\ApplicationController@update_application_ppwpro_nd')->name('update-application-nilai-matkul');
-	Route::post('update-application-examiner-nd', 'FuncController\Panel\ApplicationController@update_application_examiner_nd')->name('update-application-nilai-matkul');
+	Route::post('update-application-ppwpro', 'FuncController\Panel\ApplicationController@update_application_ppwpro')->name('update-application-nilai-ppwpro');
+	Route::post('update-application-ppwpro-nd', 'FuncController\Panel\ApplicationController@update_application_ppwpro_nd')->name('update-application-nilai-ppwpro-nd');
+	Route::post('update-application-examiner-nd', 'FuncController\Panel\ApplicationController@update_application_examiner_nd')->name('update-application-nilai-examiner-nd');
 	Route::post('update-application-nilai-matkul', 'FuncController\Panel\ApplicationController@update_application_nilai_matkul')->name('update-application-nilai-matkul');
 	Route::post('update-application-sertif-kkn', 'FuncController\Panel\ApplicationController@update_application_sertif_kkn')->name('update-application-sertif-kkn');
 	Route::post('update-application-persetuju-pem', 'FuncController\Panel\ApplicationController@update_application_persetuju_pem')->name('update-application-persetuju-pem');
